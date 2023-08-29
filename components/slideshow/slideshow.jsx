@@ -33,7 +33,7 @@ export const Slideshow = () => {
         }}
       class={styles.Slideshow}
     >
-      <swiper-slide class={styles.slideshowChild}><Image src='/favicon.ico' height={'200'} width={'200'} /></swiper-slide>
+      <swiper-slide class={styles.slideshowChild}><Image src='/favicon.ico' alt='hello' height={'200'} width={'200'} /></swiper-slide>
       <swiper-slide class={styles.slideshowChild}>Slide 2</swiper-slide>
       <swiper-slide class={styles.slideshowChild}>Slide 3</swiper-slide>
     </swiper-container>
