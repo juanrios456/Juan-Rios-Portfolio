@@ -7,8 +7,6 @@ import { BsFacebook,BsLinkedin,BsGithub } from 'react-icons/bs'
 import { IconContext } from 'react-icons';
 import styles from './footer.module.css'
 
-const icons = [ <BsLinkedin/>, <BsGithub/>];
-
 export function Footer(){
 
   return(
@@ -28,15 +26,20 @@ export function Footer(){
               className="w-full max-w-[180px]  h-auto mb-8 "
             />
             <div className="flex flex-row ">
-              {icons.map((icon, index)=>(
-                <div key={index} className="px-2">
-                  <IconContext.Provider value={{ className:'w-6 h-6 hover:text-primary-light-blue' }} >
-                    <Link href='/'>
-                      {icon}
-                    </Link>
-                  </IconContext.Provider>
-                </div>
-              ))}
+              <div className="px-2">
+                <IconContext.Provider value={{ className:'w-6 h-6 hover:text-primary-light-blue' }} >
+                  <Link href='/'>
+                    <BsLinkedin/>
+                  </Link>
+                </IconContext.Provider>
+              </div>
+              <div className="px-2">
+                <IconContext.Provider value={{ className:'w-6 h-6 hover:text-primary-light-blue' }} >
+                  <Link href='/'>
+                    <BsGithub/>
+                  </Link>
+                </IconContext.Provider>
+              </div>
             </div>
           </div>
 
