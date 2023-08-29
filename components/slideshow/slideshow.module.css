@@ -1,0 +1,11 @@
+.Slideshow{
+  position: absolute; 
+  right:0;
+  height: 18rem;
+  width: 400px;
+  background-color: aliceblue;
+}
+.slideshowChild{
+  background-color: brown;
+  width: 300px;
+}

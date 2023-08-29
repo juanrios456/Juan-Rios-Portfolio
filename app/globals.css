@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+--foreground-rgb: 0, 0, 0;
+--primary-dark-blue: #151fa6;
+--secondary-dark-blue: #444cb7;
+--tertiary-dark-blue: #141959;
+--primary-light-blue: #0dffff;
+--secondary-light-blue: #6effff;
+--tertiary-light-blue: #cfffff;
+--primary-purple: #6316b4;
+--secondary-purple: #3e1767;
+--tertiary-purple: #a173d2;
+}
+
+@layer base {
+  h1{
+    font-family: 'Merriweather', 'serif';
+    @apply text-4-xl
+  }
+}
