@@ -68,7 +68,7 @@ export function RevealOnScroll({children, variant, transitionDuration}:Props){
   )
 }
 
-export const greenFadeTransition = () =>{
+export function GreenFadeTransition(){
   const slideControls = useAnimation();
 
   return(
