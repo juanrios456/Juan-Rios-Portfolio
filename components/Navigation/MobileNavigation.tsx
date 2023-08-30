@@ -4,7 +4,8 @@ import { motion, useCycle } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { RxHamburgerMenu, } from 'react-icons/rx'
 import { GrClose, } from 'react-icons/gr'
-
+import { navigation } from "./NavigationMenu";
+import Link from "next/link";
 
 export function MobileNavigationMenu(){
   const [isOpen, toggleOpen] = useCycle(false, true);
@@ -61,14 +62,21 @@ export function MenuItemContainer(){
     variants={variants}
     className="m-0 p-[25px] absolute top-[100px] right-0 w-[300px] w-56 "
   >
-    {itemIds.map(i => (
-      <MenuItem key={i} />
+    {navigation.map((i, index) => (
+      <MenuItem key={`${i.name} ${index}`} href={i.href} name={i.name} icon={i.icon} />
     ))}
   </motion.ul>
   )
 };
 
-export const MenuItem = () => {
+interface MenuTypes {
+  name: string;
+  href: string;
+  icon: any;
+  key: string
+}
+
+export const MenuItem = ({ name, icon, href,}:MenuTypes) => {
   const variants = {
     open: {
       x: 0,
@@ -86,16 +94,22 @@ export const MenuItem = () => {
     }
   };
 
-  const style = { border: `2px solid var(--primary-light-blue)` };
+
   return (
     <motion.li
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className=' p-0 m-0 mb-[20px] flex items-center cursor-pointer '
+      className=' p-0 m-0 mb-[20px] flex items-center cursor-pointer  '
     >
-      <div className= 'w-[40px]  h-[40px] rounded-[50%] mr-[20px]' style={style} />
-      <div className='rounded w-[200px] h-[20px] flex-[1]' style={style} />
+      <Link href={href} className="flex justify-center items-center border text-white border-white rounded-lg ">
+        <div className= 'p-2 rounded-[50%] mr-2 grid place-items-center ' >
+          {icon}
+        </div>
+        <div className='rounded min-w-[190px] grid justift-start py-2   ' >
+          {name}
+        </div>
+      </Link>
     </motion.li>
   );
 };
