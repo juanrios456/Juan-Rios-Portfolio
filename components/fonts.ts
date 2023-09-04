@@ -2,7 +2,7 @@ import { Inter, Merriweather } from 'next/font/google'
 
 export const inter = Inter({
   subsets: ['latin'],
-  weight: '600'
+  weight: '400'
 })
 export const merriweather = Merriweather({
   subsets: ['cyrillic'],
