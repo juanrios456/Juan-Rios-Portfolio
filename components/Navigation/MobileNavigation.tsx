@@ -60,7 +60,7 @@ export function MenuItemContainer(){
   return(
   <motion.ul
     variants={variants}
-    className="m-0 p-[25px] absolute top-[100px] right-0 w-[300px] w-56 "
+    className="m-0 p-[25px] absolute top-[100px] right-0  w-56 "
   >
     {navigation.map((i, index) => (
       <MenuItem key={`${i.name} ${index}`} href={i.href} name={i.name} icon={i.icon} />
