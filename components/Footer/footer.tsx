@@ -28,14 +28,14 @@ export function Footer(){
             <div className="flex flex-row ">
               <div className="px-2">
                 <IconContext.Provider value={{ className:'w-6 h-6 hover:text-primary-light-blue' }} >
-                  <Link href='/'>
+                  <Link href='https://www.linkedin.com/in/juan-rios-39551a237'>
                     <BsLinkedin/>
                   </Link>
                 </IconContext.Provider>
               </div>
               <div className="px-2">
                 <IconContext.Provider value={{ className:'w-6 h-6 hover:text-primary-light-blue' }} >
-                  <Link href='/'>
+                  <Link href='https://github.com/juanrios456'>
                     <BsGithub/>
                   </Link>
                 </IconContext.Provider>

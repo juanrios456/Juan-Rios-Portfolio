@@ -7,7 +7,6 @@ import { BiAtom, } from 'react-icons/bi'
 import { BsClipboard, } from 'react-icons/bs'
 import { IconContext } from 'react-icons'
 
-
 export const navigation = [
   { name: 'Home', href: '/', current: false, icon: <MdHomeFilled/> },
   { name: 'Contact', href: '/contact', current: false, icon: <MdContactPage/>, },

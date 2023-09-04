@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import {NavigationMenu} from '@components/Navigation/NavigationMenu';
 import { Footer } from '@components/Footer/footer';
+import {inter} from '@components/fonts'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`overflow-x-hidden bg-gradient-to-r from-[#141959] to-[#18d8d9]  `}>
+      <body className={`${inter.className} overflow-x-hidden bg-gradient-to-r from-[#141959] to-[#18d8d9]  `}>
         <NavigationMenu/>
           {children}
         <Footer/>
