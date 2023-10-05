@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import {NavigationMenu} from '@components/Navigation/NavigationMenu';
-import { Footer } from '@components/Footer/footer';
+import { Footer } from '@components/footer';
 import {inter} from '@components/fonts'
 
 export const metadata: Metadata = {
@@ -18,7 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} overflow-x-hidden bg-gradient-to-r from-[#141959] to-[#18d8d9]  `}>
         <NavigationMenu/>
+        <main>
           {children}
+        </main>
         <Footer/>
       </body>
     </html>

@@ -1,4 +1,4 @@
-import { Button } from "@components/button";
+import { LinkButton } from "@components/button";
 import { HiPaintBrush, } from 'react-icons/hi2'
 import { BsFileEarmarkCode } from 'react-icons/bs'
 import { Card, CardHeader, CardBody, CardFooter, } from '@components/Cards'
@@ -36,7 +36,7 @@ export function Skills(){
           <h2 className="text-center text-[#f5f5f5]  " >Work Skills / Previous Experience</h2>
         </RevealOnScroll>
       </div>
-      <div className="flex flex-col md:grid md:grid-cols-2">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 px-4">
         <div className="flex justify-center">
         <RevealOnScroll>
           <Card className="my-10 max-w-lg bg-slate-200">
@@ -55,7 +55,7 @@ export function Skills(){
                   To learn about how I got started click the button below to check out my portfolio.
                 </p>
                 <div className="flex justify-center">
-                  <Button href='/portfolio' >Learn More</Button>
+                  <LinkButton href='/portfolio' >Learn More</LinkButton>
                 </div>
                 <p>
                   Some of the tools that I have used before are:
@@ -71,7 +71,7 @@ export function Skills(){
             <CardFooter>
               <p>To view all of my Graphic Design projects click the following link below</p>
               <div className="flex justify-center py-2">
-                <Button href="/graphic-design">View Design Projects</Button>
+                <LinkButton href="/graphic-design">View Design Projects</LinkButton>
               </div>
             </CardFooter>
           </Card>
@@ -96,7 +96,7 @@ export function Skills(){
                   To learn on how I got started click the button below to check out my portfolio.
                 </p>
                 <div className="flex justify-center">
-                  <Button href='/portfolio'>Learn More</Button>
+                  <LinkButton href='/portfolio'>Learn More</LinkButton>
                 </div>
                 <p>
                   Some of the Programming Languages / Libraries I know are:
@@ -112,7 +112,7 @@ export function Skills(){
             <CardFooter>
               <p>To view all of my Web Devleopment projects click the following link below</p>
               <div className="flex justify-center py-2">
-                <Button href="/web-development">View Web Projects</Button>
+                <LinkButton href="/web-development">View Web Projects</LinkButton>
               </div>
             </CardFooter>
           </Card>
