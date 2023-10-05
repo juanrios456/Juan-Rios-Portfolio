@@ -6,7 +6,7 @@ interface ButtonProps{
   className?: string;
 }
 
-export function Button({children, href, className}:ButtonProps) {
+export function LinkButton({children, href, className}:ButtonProps) {
   return(
     <Link
      href={href}
