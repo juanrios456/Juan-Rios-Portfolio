@@ -2,17 +2,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { MobileNavigationMenu } from './MobileNavigation'
-import { MdDeveloperMode,MdContactPage,MdHomeFilled } from 'react-icons/md'
+import { MdContactPage,MdHomeFilled } from 'react-icons/md'
 import { BiAtom, } from 'react-icons/bi'
-import { BsClipboard, } from 'react-icons/bs'
 import { IconContext } from 'react-icons'
+
 
 export const navigation = [
   { name: 'Home', href: '/', current: false, icon: <MdHomeFilled/> },
   { name: 'Contact', href: '/contact', current: false, icon: <MdContactPage/>, },
-  { name: 'Website Development', href: '/web-development', current: false, icon: <MdDeveloperMode/>, },
-  { name: 'Graphic Design', href: '/graphic-design', current: false, icon: <BiAtom/> },
-  { name: 'Portfolio', href: '/portfolio', current: false, icon: <BsClipboard/> },
+  { name: 'Portfolio', href: '/portfolio', current: false, icon: <BiAtom/> },
 ];
 
 function classNames(...classes:any) {
@@ -37,7 +35,7 @@ export function NavigationMenu() {
                   />
                 </Link>
               </div>
-              <div className="hidden lg:block">
+              <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   {navigation.map((item) => (
                     <Link
@@ -58,7 +56,7 @@ export function NavigationMenu() {
               </div>
             </div>
 
-            <div className="-mr-2 flex lg:hidden">
+            <div className="-mr-2 flex md:hidden">
               <MobileNavigationMenu/>
             </div>
           </nav>
