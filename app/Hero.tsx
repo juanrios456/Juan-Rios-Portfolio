@@ -7,7 +7,7 @@ export function Hero(){
   return(
   <>
     <div className="relative h-[95vh]  ">
-      <Image src='/net-image.jpeg'
+      <Image src='/net-image.jpg'
         alt="Purple globe "
         width={900}
         height={1000}
