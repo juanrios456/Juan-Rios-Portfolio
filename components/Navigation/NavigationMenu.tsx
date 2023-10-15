@@ -4,13 +4,15 @@ import Link from 'next/link'
 import { MobileNavigationMenu } from './MobileNavigation'
 import { MdContactPage,MdHomeFilled } from 'react-icons/md'
 import { BiAtom, } from 'react-icons/bi'
+import { FaHatWizard, } from 'react-icons/fa'
 import { IconContext } from 'react-icons'
 
 
 export const navigation = [
   { name: 'Home', href: '/', current: false, icon: <MdHomeFilled/> },
-  { name: 'Contact', href: '/contact', current: false, icon: <MdContactPage/>, },
+  { name: 'Contact', href: '/contact', current: false, icon: <FaHatWizard/>, },
   { name: 'Portfolio', href: '/portfolio', current: false, icon: <BiAtom/> },
+  { name: 'Resume', href: '/resume', current: false, icon: <MdContactPage/>, },
 ];
 
 function classNames(...classes:any) {
@@ -19,8 +21,7 @@ function classNames(...classes:any) {
 
 export function NavigationMenu() {
   return (
-    <>
-      <div className="min-h-full sticky top-0 left-0 z-10 bg-gradient-to-r from-[#141959] to-[#18d8d9] ">
+      <div className="w-full top-0 left-0 bg-gradient-to-r from-[#141959] to-[#18d8d9] ">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <nav className="flex h-16 items-center justify-between">
             <div className="flex items-center">
@@ -62,7 +63,6 @@ export function NavigationMenu() {
           </nav>
         </div>
       </div>
-    </>
   )
 }
 
