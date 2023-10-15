@@ -8,3 +8,7 @@ export const merriweather = Merriweather({
   subsets: ['cyrillic'],
   weight: '400'
 });
+export const interSemiBold = Inter({
+  subsets: ['latin'],
+  weight: '600'
+})

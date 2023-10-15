@@ -3,13 +3,13 @@ import { motion, useAnimation, } from "framer-motion";
 import { useRef } from "react";
 
 interface Props{
-  children: JSX.Element;
+  children: React.ReactNode;
   variant?: string;
   transitionDuration?: number;
-
+  className?: string;
 }
 
-export function RevealOnScroll({children, variant, transitionDuration}:Props){
+export function RevealOnScroll({children, variant, transitionDuration, className}:Props){
   let variantType = {}
 
   switch (variant) {
@@ -53,17 +53,16 @@ export function RevealOnScroll({children, variant, transitionDuration}:Props){
 
 
   return(
-    <span className="relative">
       <motion.div
         variants={variantType}
         whileInView='visible'
         initial='hidden'
         viewport={{once: true}}
-        transition={{duration: transitionDuration ?? 1, }}
+        transition={{duration: transitionDuration ?? 0.5 }}
+        className={className}
       >
         {children}
       </motion.div>
-    </span>
   )
 }
 
