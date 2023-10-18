@@ -31,7 +31,7 @@ export const ContactTemplate = ({ name, phone, email, subject, message }:emailPa
   return(
   <Html>
     <Head />
-    <Preview>You're now ready to make live transactions with Stripe!</Preview>
+    <Preview>{subject}</Preview>
     <Body style={{backgroundColor: '#f3f3f3'}} >
       <Container style={{padding: '4px', width: '100%', maxWidth: '600px'  }}>
       
