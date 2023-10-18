@@ -16,7 +16,7 @@ export async function POST(req:Request, res:Response){
     const data = await resend.sendEmail({
       from: 'Website <email@capitalstonellc.com>' || '',
       to: ['juanriis456@gmail.com'],
-      subject: 'Hello World',
+      subject: 'New Website Form Recieved',
       react: ContactTemplate({ name: name, phone: phone, email: email, subject: subject, message:message})
     });
     return NextResponse.json({status: 'OK'},{status: 200})
