@@ -99,8 +99,6 @@ export function ContactForm(){
       <div className="text-center pb-8">
         <h1 className="">Contact Form</h1>
         <p className=" text-rose-800 ">All fields must be filled out in order for the form to be successfully sent</p>
-        <button onClick={openModal}>open modal</button>
-        <button onClick={closeModal}>close modal</button>
       </div>
       <div className="flex items-center justify-center">
         <form className=" w-full max-w-2xl ">
