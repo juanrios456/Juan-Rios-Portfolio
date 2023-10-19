@@ -11,4 +11,4 @@ yarn dev
 # or
 pnpm dev
 ```
-I wonder if this is all it takes 
+This is a custom website I developed with the purpose of it being a portfolio holding my previous work experience as well as some personal projects, and my resume.
