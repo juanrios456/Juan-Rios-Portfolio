@@ -140,7 +140,7 @@ export function ContactForm(){
                 onChange={handleChange}
                 id='message'
                 onBlur={onBlur}
-                className={`${(touched.message && !values.message) ? 'border-3 border-rose-800': '' } p-2 rounded-lg `}
+                className={`${(touched.message && !values.message) ? 'border-4 border-rose-800': '' } p-2 rounded-lg `}
                 disabled={isLoading ? true : false}
               />
             </div>
