@@ -54,9 +54,6 @@ export function Footer(){
               <FooterLink href='/faq' >FAQ (Common Questions)</FooterLink>
             </div>
             <div className="md:hidden">
-              <FooterLink href='mailto:juanriis456@gmail.com' >Email Me Today!</FooterLink>
-            </div>
-            <div className="md:hidden">
               <FooterLink href='/sitemap' >Sitemap</FooterLink>
             </div>
           </div>
@@ -67,9 +64,6 @@ export function Footer(){
             </div>
             <div className="">
               <FooterLink href='/sitemap' >Sitemap</FooterLink>
-            </div>
-            <div className="">
-              <FooterLink href='mailto:juanriis456@gmail.com'>Email Me Today!</FooterLink>
             </div>
           </div>
         </div>

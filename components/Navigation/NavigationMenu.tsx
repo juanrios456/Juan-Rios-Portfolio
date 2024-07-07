@@ -12,7 +12,6 @@ export const navigation = [
   { name: 'Home', href: '/', current: false, icon: <MdHomeFilled/> },
   { name: 'Contact', href: '/contact', current: false, icon: <FaHatWizard/>, },
   { name: 'Portfolio', href: '/portfolio', current: false, icon: <BiAtom/> },
-  { name: 'Resume', href: '/resume', current: false, icon: <MdContactPage/>, },
 ];
 
 function classNames(...classes:any) {
