@@ -4,7 +4,7 @@ import Image from "next/image";
 export function Hero(){
   return(
   <div className="relative h-[95vh] bg-black " >
-    <video className="w-full h-full object-cover absolute object-left-bottom"  autoPlay muted loop>
+    <video className="w-full h-full object-cover absolute object-left-bottom"  autoPlay muted loop playsInline>
       <source src="/portfolio/rotating-earth.mp4" type="video/mp4"/>
       Your browser does not support the video tag.
     </video>
