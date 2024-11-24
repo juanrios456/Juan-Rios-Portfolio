@@ -11,4 +11,5 @@ yarn dev
 # or
 pnpm dev
 ```
-This is a custom website I developed with the purpose of it being a portfolio holding my previous work experience as well as some personal projects, and my resume.
+
+Digital Portfolio of Juan Rios
