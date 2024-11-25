@@ -20,7 +20,7 @@ function classNames(...classes:any) {
 
 export function NavigationMenu() {
   return (
-      <div className="w-full top-0 left-0 bg-gradient-to-r from-[#141959] to-[#18d8d9] ">
+      <div className="w-full top-0 left-0 bg-gradient-to-r from-[#141959]/[.7] to-[#18d8d9]/[.7] ">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <nav className="flex h-16 items-center justify-between">
             <div className="flex items-center">
