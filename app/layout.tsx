@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} overflow-x-hidden bg-gradient-to-r from-[#141959] to-[#18d8d9]  `}>
+      <body className={`${inter.className} overflow-x-hidden bg-gradient-to-r from-[#141959]/[.7] to-[#18d8d9]/[.7]  `}>
         <NavigationMenu/>
         <main>
           {children}

@@ -36,4 +36,7 @@
     @apply text-xl;
     @apply md:text-2xl
   }
+  a{
+    @apply underline
+  }
 }
