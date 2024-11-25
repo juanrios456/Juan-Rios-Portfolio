@@ -20,6 +20,7 @@ const config: Config = {
         'tertiary-purple': '#a173d2',
       }
     },
+    
   },
   plugins: [],
 }
