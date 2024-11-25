@@ -39,14 +39,14 @@ export function MobileNavigationMenu(){
       ref={constainerRef}
       className="z-10"
     >
-      <motion.div variants={variants}  className="absolute top-0 right-0 w-[300px] h-[100vh] bg-gradient-to-t from-[#141959] to-[#18d8d9]" />
-      <MenuItemContainer  />
+      <motion.div variants={variants}  className="absolute top-0 right-0 w-[300px] h-[100vh] bg-gradient-to-t from-[#141959]/[.9] to-[#18d8d9]/[.9]" />
+      <MenuItemContainer toggle={() => toggleOpen()}  />
       <MenuToggle toggle={() => toggleOpen()} isOpenState={isOpen} />
     </motion.div>
   )
 }
 
-export function MenuItemContainer(){
+export function MenuItemContainer({toggle}:{toggle:VoidFunction}){
   const itemIds = [0, 1, 2, 3, 4];
   const variants = {
     open: {
@@ -63,20 +63,20 @@ export function MenuItemContainer(){
     className="m-0 p-[25px] absolute top-[100px] right-[75px]  w-56 "
   >
     {navigation.map((i, index) => (
-      <MenuItem key={`${i.name} ${index}`} href={i.href} name={i.name} icon={i.icon} />
+      <MenuItem toggle={toggle} key={`${i.name} ${index}`} href={i.href} name={i.name} icon={i.icon} />
     ))}
   </motion.ul>
   )
 };
 
-interface MenuTypes {
-  name: string;
-  href: string;
-  icon: any;
+type MenuTypes = {
+  name: string,
+  href: string,
+  icon: any,
   key: string
 }
 
-export const MenuItem = ({ name, icon, href,}:MenuTypes) => {
+export const MenuItem = ({ name, icon, href, toggle}:{name: string, href: string, icon: any, key: string, toggle:VoidFunction}) => {
   const variants = {
     open: {
       x: 0,
@@ -102,7 +102,7 @@ export const MenuItem = ({ name, icon, href,}:MenuTypes) => {
       whileTap={{ scale: 0.95 }}
       className=' p-0 m-0 mb-[20px] flex items-center cursor-pointer  '
     >
-      <Link href={href} className="flex justify-center items-center border text-white border-white rounded-lg ">
+      <Link onClick={toggle} href={href} className="flex justify-center items-center border text-white border-white rounded-lg ">
         <div className= 'p-2 rounded-[50%] mr-2 grid place-items-center ' >
           {icon}
         </div>
@@ -115,7 +115,7 @@ export const MenuItem = ({ name, icon, href,}:MenuTypes) => {
 };
 
 
-export function MenuToggle({ toggle, isOpenState }:any){
+export function MenuToggle({ toggle, isOpenState }:{toggle: VoidFunction, isOpenState: boolean}){
   return(
   <button className="relative bg-white rounded-[50%] p-2" onClick={toggle}>
     {isOpenState ?
