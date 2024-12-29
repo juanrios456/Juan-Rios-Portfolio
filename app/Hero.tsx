@@ -1,3 +1,4 @@
+import { LinkButton } from "@components/button";
 import { RevealOnScroll } from "@components/ScrollTransitions";
 import Image from "next/image";
 
@@ -14,14 +15,13 @@ export function Hero(){
         priority={true}
         className="absolute w-[100%] h-[100%] object-cover object-left "
       />
-      <div className="w-5xl h-full flex items-center relative justify-center md:justify-end  ">
+      <div className="w-5xl h-full flex items-center relative justify-center">
         <RevealOnScroll>
-        <div className="bg-[#141959]/[.85] relative w-[100%] max-w-xl rounded-2xl flex flex-col justify-center items-center px-10 py-14  mx-4 text-white ">
-          <h1 className='pb-6 max-w-[400px]'>Welcome To Juans <i className="bg-[#0cfeff]/[.60] px-2">Digital Portfolio</i></h1>
+        <div className="bg-[#141959]/[.85] relative max-w-xl rounded-2xl flex flex-col justify-center items-center px-3 py-8 sm:px-10 sm:py-14 mx-4 text-white ">
+          <h1 className='pb-6 '>Juan's<br />Digital Portfolio</h1>
           <p className='pb-2'>Here you may find examples of previous projects, mini games, project libraries, and more.</p>
           <p>If you are looking to have a webpage design follow the contact button below!</p>
-          <div>
-          </div>
+          <LinkButton href="/contact" className="bg-secondary-light-blue hover:bg-secondary-light-blue/70 text-black">Contact</LinkButton>
         </div>
         </RevealOnScroll>
       </div>

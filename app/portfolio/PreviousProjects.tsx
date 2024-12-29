@@ -59,10 +59,10 @@ export function WebProjects(){
       </div>
     </div>
     <div className="flex flex-col items-center justify-center space-y-4 md:flex-row  md:space-x-4 md:space-y-0 ">
-      <LinkButton href={item.repo} className=" hover:bg-secondary-purple hover:text-white w-full max-w-[190px] ">
+      <LinkButton href={item.repo} className="  w-full max-w-[190px] ">
         View Github Repo
       </LinkButton>
-      <LinkButton href={item.website} className=" hover:bg-secondary-purple hover:text-white w-full max-w-[190px]">
+      <LinkButton href={item.website} className="  w-full max-w-[190px]">
         Visit Website
       </LinkButton>
     </div>
@@ -106,6 +106,9 @@ export function Pin({children, bg}:any){
     case 'ChakraUI':
       bgColor = 'bg-lime-600'
     break;
+    case 'NextUI':
+      bgColor = 'bg-lime-200'
+    break;
     case 'HeadlessUI':
       bgColor = 'bg-emerald-500'
     break;
@@ -144,11 +147,20 @@ export function Pin({children, bg}:any){
 
 const projectDetails: ProjectDetails  = [
   {
+    name: 'Kansas Board of Cosmetology',
+    imageFolder: 'kboc',
+    alt: 'Kansas Board of Cosmetology Logo',
+    description: 'A state agency in kansas that oversees all of the Cosmetology professions (manicurist, cosmetologist, esthetician, electologist), Body Art Professions (Tattoo artists, and body piercers) and Tanning Salons.',
+    techStack: ['NextJS', 'ReactJS', 'TailwindCSS', 'NextUI'],
+    repo: 'https://github.com/juanrios456/kboc',
+    website: 'www.kansas.gov/kboc'
+  },
+  {
     name: 'Conchis Cuisine',
     imageFolder: 'conchis-cuisine',
     alt: 'A trompo on the left with a slice of cake on the right, below the image are the words Conchis Cuisine Authentic Mexican Food',
-    description: 'Conchis cuisine is a food trailer in Topeka, Kansas that participates in local events and festivals..',
-    techStack: ['NextJS', 'ReactJS', 'Vercel', 'ChakraUI', 'NodeMailer'],
+    description: 'Conchis cuisine is a food trailer in Topeka, Kansas that participates in local events and festivals.',
+    techStack: ['NextJS', 'ReactJS', 'Vercel', 'ChakraUI', 'NodeMailer', 'TailwindCSS'],
     repo: 'https://github.com/juanrios456/conchiscuisine',
     website: 'https://conchiscuisine.com',
   },
@@ -157,7 +169,7 @@ const projectDetails: ProjectDetails  = [
     imageFolder: 'capital-stone',
     alt: 'It is a house on the left half and a hotel on the right with stucco on the walls and a small half wall of stone below the image are the words Capital Stone your stucco and stone specialists',
     description: 'Capital Stone is a local construction contractor who mainly works with stucco, stone, block, and brick. They have over 20 years of experience working with commercial and residential work.',
-    techStack: ['NextJS', 'ReactJS', 'Vercel', 'ChakraUI', 'React-Email', 'Resend', 'Typescript' ],
+    techStack: ['NextJS', 'ReactJS', 'Vercel', 'ChakraUI', 'React-Email', 'Resend', 'Typescript', 'TailwindCSS' ],
     repo: 'https://github.com/juanrios456/capital-stone',
     website: 'https://capitalstonellc.com',
   },
@@ -166,14 +178,14 @@ const projectDetails: ProjectDetails  = [
     imageFolder: 'antonio-masonry-and-stucco',
     alt: 'It is a house with stucco on the walls and a small half wall of stone below the image are the words Antonio Masonry and Stucco Quality Siding Tailored to you',
     description: 'Antonio Masonry and Stucco is a local Stucco and stone / masonry construction contractor in Topeka, Kansas.',
-    techStack: ['NextJS', 'ReactJS', 'Vercel', 'Framer-Motion', 'React-Email', 'Resend', 'Typescript', 'ChakraUI', 'HeadlessUI'],
+    techStack: ['NextJS', 'ReactJS', 'Vercel', 'Framer-Motion', 'React-Email', 'Resend', 'Typescript', 'ChakraUI', 'HeadlessUI', 'TailwindCSS'],
     repo: 'https://github.com/juanrios456/antonio-masonry',
     website: 'https://antoniomasonryandstucco.com',
   },
   {
     name: "Mission Lawn and Concrete",
     imageFolder: 'mission-lawn-and-concrete',
-    alt: 'It is a circle with mountains in the middle along with the words Mission Lawn and Concrete along the edge of the circle on the inside.',
+    alt: 'It is a circle with mountains in the middle along with the words Mission Lawn and Concrete along the edge of the circle on the inside',
     description: 'Mission Lawn and Concrete is a local Landscaping and Concrete company in Topeka Kansas who have done work with commercial and residential projects.',
     techStack: ['PHP', 'JS', 'HTML', 'CSS'],
     repo: 'https://github.com/juanrios456/missionlawnandconcrete',
