@@ -153,7 +153,7 @@ const projectDetails: ProjectDetails  = [
     description: 'A state agency in kansas that oversees all of the Cosmetology professions (manicurist, cosmetologist, esthetician, electologist), Body Art Professions (Tattoo artists, and body piercers) and Tanning Salons.',
     techStack: ['NextJS', 'ReactJS', 'TailwindCSS', 'NextUI'],
     repo: 'https://github.com/juanrios456/kboc',
-    website: 'www.kansas.gov/kboc'
+    website: 'https://www.kansas.gov/kboc'
   },
   {
     name: 'Conchis Cuisine',
