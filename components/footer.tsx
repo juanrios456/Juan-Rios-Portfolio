@@ -9,7 +9,7 @@ import { IconContext } from 'react-icons';
 export function Footer(){
 
   return(
-    <footer className="border-t border-t-white">
+    <footer className="">
       <div className="py-16 px-2 flex flex-col justify-center items-center gap-y-4 sm:gap-0 md:space-x-[100px] space-x-[50px] sm:flex-row ">
         <div className="flex flex-col mb-6 sm:mb-0">
           <Image src='/Logo-transparent-bg.png'

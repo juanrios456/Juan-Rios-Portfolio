@@ -1,6 +1,6 @@
-import { LinkButton } from "@components/button";
 import { RevealOnScroll } from "@components/ScrollTransitions";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Hero(){
 
@@ -21,7 +21,7 @@ export function Hero(){
           <h1 className='pb-6 '>Juan's<br />Digital Portfolio</h1>
           <p className='pb-2'>Here you may find examples of previous projects, mini games, project libraries, and more.</p>
           <p>If you are looking to have a webpage design follow the contact button below!</p>
-          <LinkButton href="/contact" className="bg-secondary-light-blue hover:bg-secondary-light-blue/70 text-black">Contact</LinkButton>
+          <Link href="/contact" className="bg-secondary-light-blue hover:bg-secondary-light-blue/70 text-black  inline-block text-center px-6 py-2 rounded-xl">Contact</Link>
         </div>
         </RevealOnScroll>
       </div>

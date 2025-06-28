@@ -156,6 +156,15 @@ const projectDetails: ProjectDetails  = [
     website: 'https://www.kansas.gov/kboc'
   },
   {
+    name: 'Midwest Fence and Deck',
+    imageFolder: 'midwest-fence-and-deck',
+    alt: 'Logo with Just the words Midwest Fence and Deck',
+    description: 'Midwest Fence and Deck is a local fence and deck company in Lawrence, Kansas that has been in business for over 20 years. They specialize in all types of fencing and decking, including wood, vinyl, chain link, and aluminum.',
+    techStack: ['NextJS', 'ReactJS', 'TypeScript', 'TailwindCSS', 'SwipterJS', 'Framer-Motion'],
+    repo: 'https://github.com/juanrios456/midwestfenceanddeck',
+    website: 'https://midwestfenceanddeck.com',
+  },
+  {
     name: 'Conchis Cuisine',
     imageFolder: 'conchis-cuisine',
     alt: 'A trompo on the left with a slice of cake on the right, below the image are the words Conchis Cuisine Authentic Mexican Food',
